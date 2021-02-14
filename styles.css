@@ -1,0 +1,397 @@
+body{
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+/* navbar-logo style */
+.my-logo{
+    height: 4em;
+    width: 4em;
+    cursor: pointer;
+    border: 1px solid blue;
+    border-radius: 50%;
+    transition: all .5s ease-in-out;
+}
+.my-logo:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 0 5px 3px lightskyblue;
+    border-radius: 20%;
+}
+
+/* navbar-mentorship style */
+.men1{
+    color: black;
+    font-weight: 600;
+}
+.bar-link1{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: inline-block;
+    transition: all .3s ease-in-out;
+    margin: 0 30px;
+}
+.bar-link1:hover{
+    text-shadow: 2px 2px 5px lightskyblue;
+}
+
+/* navbar-sayhello style + BTN */
+.bar-link2{
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+}
+
+.btn-sayh{
+    border-radius: 50px;
+    font-weight: 600;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    transition: all .2s ease-in-out;
+    outline: none;
+}
+
+/* navbar media query for small devices */
+@media (max-width: 600px){
+    .bar-link1{
+        display: block;
+        padding: 5px;
+        margin: 0;
+    }
+    .bar-link2{
+        display: block;
+    }
+    .btn-sayh{
+        margin-top: 20px;
+    }
+}
+
+/* navbar list content adjustment for large screen */
+.navi-main{
+    display: flex;
+    justify-content: flex-end;
+    transition: all .5s ease-in-out;
+}
+
+/* top content just after navbar */
+.top-content{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.top-content-head{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.top-content-para{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    line-height: 3;
+}
+
+@media (max-width: 1200px) {
+    .top-content-head{
+        font-size: 2.5rem;
+    }
+    .top-content-para{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 770px) {
+    .top-content-head{
+        font-size: 1.6rem;
+    }
+    .top-content-para{
+        font-size: .8rem;
+    }
+}
+
+/* first two image work out */
+.fir-img{
+    display: block;
+    margin: 50px auto 80px auto;
+}
+
+.sec-img{
+    display: block;
+    margin: 50px auto 0 auto;
+}
+
+@media (max-width: 770px) {
+    .fir-img{
+        transform: scale(.7);
+        margin: 0 auto;
+    }
+    .sec-img{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+/* middle introduction */
+.mid-content{
+    background-color: blue;
+    position: relative;
+    bottom: 2px;
+    height: 700px;
+    text-align: center;
+}
+
+.mid-content-head{
+    color: white;
+    padding-top: 150px;
+    font-weight: 600;
+}
+
+.mid-content-para{
+    color: white;
+    font-size: 1.38rem;
+    line-height: 2;
+    padding: 20px 200px;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 600px) {
+    .mid-content{
+        max-height: 600px;
+    }
+    .mid-content-head{
+        font-size: 1.5rem;
+        padding-top: 100px;
+    }
+    .mid-content-para{
+        font-size: 1.1rem;
+        line-height: 2;
+        padding: 20px 20px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1100px){
+    .mid-content-para{
+        padding: 20px 20px;
+    }    
+}
+
+/* skill content in the middle section */
+
+.mid-skill-1{
+    background-color: white;
+    border: 1px solid pink;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 0 .5px 1px 1px pink;
+}
+
+.mid-skill-2{
+    background-color: white;
+    border: 1px solid pink;
+    box-shadow: 0 .5px 1px 1px pink;
+}
+
+.mid-skill-3{
+    background-color: white;
+    border: 1px solid pink;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0 .5px 1px 1px pink;
+}
+
+.des1, .des2, .des3{
+    margin: 30px 50px;
+}
+
+.skill-head{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.skill-para{
+    font-size: 1.17rem;
+    font-weight: 500;
+    line-height: 2;
+}
+
+.li-style-rem{
+    list-style-type: none;
+}
+
+.sub-h4{
+    color: blue;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 60px;
+}
+
+.mid-skill-con{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 1000px){
+    .mid-skill-con{
+        display: block;
+    }
+    .mid-skill-1{
+        border-radius: 10px 10px 0 0;
+    }
+    .mid-skill-2{
+        border-radius: 0;
+    }
+    .mid-skill-3{
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+/* after skill section recent work */
+
+.ph-2-head{
+    font-weight: 600;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.ph-2-para{
+    font-size: 1.3rem;
+    margin-bottom: 70px;
+    padding: 5px 20px;
+}
+
+.mail-modi{
+    font-weight: 600;
+    transition: all .2s ease-in-out;
+}
+.mail-modi:hover{
+    text-decoration: none;
+    color: blue;
+    text-shadow: 2px 0 2px lightskyblue;
+}
+
+/* phase-2 section image work total 6 */
+
+.ph-2-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ph-2-img *{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+    transition: all .4s ease-in-out;
+}
+.ph-2-img *:hover{
+    opacity: 0.7;
+}
+
+/* dribble button */
+.drb{
+    margin: 40px auto 80px auto;
+    border-radius: 20px;
+    width: 25%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+/* brand names work */
+.com-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.bra-img * {
+    margin: 20px 20px;
+}
+
+.bra-head{
+    font-weight: 600;
+    margin: 100px auto;
+    padding: 5px 100px;
+}
+
+@media (max-width: 1050px) {
+    .bra-head{
+        font-size: 1.6rem;
+        padding: 5px 20px;
+    }
+}
+@media (max-width: 775px) {
+    .bra-head{
+        font-size: 1.2rem;
+        padding: 5px 15px;
+    }
+}
+
+/* startup project section */
+.main-one{
+    background-color: blue;
+    margin-top: 100px;
+    height: 500px;
+}
+.proj-heading{
+    color: white;
+    padding-top: 100px;
+    font-weight: 600;
+}
+.proj-para{
+    color: white;
+    padding-top: 20px;
+    line-height: 2;
+    padding-left: 250px;
+    padding-right: 250px;
+    font-size: 1.3rem;
+    padding-bottom: 50px;
+}
+@media (min-width:800px) and (max-width:1200px) {
+    .proj-para{
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+}
+@media (min-width:500px) and (max-width:799px) {
+    .proj-para{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.proj-work{
+    background-color: white;
+    border-radius: 5px;
+    height: auto;
+    border: 1px solid pink;
+    margin: 5px;
+    text-align: center;
+    box-shadow: 0 2px 1px 1px pink;
+}
+.proj-img{
+    margin: 30px;
+    text-align: center;
+}
+.proj-p-tag{
+    text-align:center;
+    padding: 30px;
+}
+.check-four{
+    display: flex;
+    justify-content: center;
+}
+.collab{
+    margin-top: 100px;
+    font-weight: 600;
+}
+.collab-para{
+    margin-top: 30px;
+    font-size: 1.3rem;
+    margin-bottom: 60px;
+}
+.start-con{
+    border-radius: 20px;
+    font-weight: 600;
+    padding: 5px 15px;
+    font-size: 1.2rem;
+    margin-bottom: 70px;
+}
